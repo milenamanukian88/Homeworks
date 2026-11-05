@@ -96,8 +96,7 @@ This would help determine whether one algorithm consistently performs better.
 
 Another improvement would be to experiment with different exploration rates for Epsilon Greedy and different prior precision values for Thompson Sampling.
 
-Conclusion
+## Conclusion
 
 Both algorithms successfully identified the bandit with the highest expected reward.
-
 In this simulation, Thompson Sampling achieved slightly better results than Epsilon Greedy. However, additional simulations would be useful for comparing their performance more reliably.
