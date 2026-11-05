@@ -1,12 +1,12 @@
-HW2: Multi-Armed Bandit Algorithms
+# HW2: Multi-Armed Bandit Algorithms
 
-Overview
+## Overview
 
 This homework implements and compares two multi-armed bandit algorithms: Epsilon Greedy and Thompson Sampling.
 
 The goal is to find the best-performing bandit among four options by maximizing the total reward and minimizing regret.
 
-Experiment Setup
+## Experiment Setup
 
 The experiment uses the following settings:
 
@@ -19,9 +19,9 @@ The experiment uses the following settings:
 
 Bandit 4 has the highest expected reward, making it the optimal choice.
 
-Algorithms
+## Algorithms
 
-1. Epsilon Greedy
+### 1. Epsilon Greedy
 
 Epsilon Greedy balances exploration and exploitation.
 
@@ -30,7 +30,7 @@ Epsilon Greedy balances exploration and exploitation.
 * The exploration probability decreases over time using ε = 1/t.
 * Each bandit is tested once at the beginning.
 
-2. Thompson Sampling
+### 2. Thompson Sampling
 
 Thompson Sampling uses Bayesian updating to estimate the expected reward of each bandit.
 
@@ -39,7 +39,7 @@ Thompson Sampling uses Bayesian updating to estimate the expected reward of each
 * It selects the bandit with the highest sampled value.
 * After receiving a reward, the posterior distribution is updated.
 
-Results
+## Results
 
 The following results were obtained from the simulation:
 
@@ -53,7 +53,7 @@ Both algorithms achieved average rewards close to the optimal expected reward of
 
 Thompson Sampling performed slightly better in this experiment, achieving a higher total reward and lower regret.
 
-Visualizations
+## Visualizations
 
 The results folder contains six graphs:
 
@@ -66,7 +66,7 @@ The results folder contains six graphs:
 
 The learning curves show how the average reward changes over time. The comparison graphs show the differences in total rewards and regret between the algorithms.
 
-Output Files
+## Output Files
 
 The program generates three CSV files:
 
@@ -80,7 +80,7 @@ Bandit, Reward, Algorithm
 
 The combined rewards.csv file contains results from both algorithms.
 
-How to Run
+## How to Run
 
 1. Install the required libraries:
     pip install -r requirements.txt
@@ -88,7 +88,7 @@ How to Run
     python Bandit.py
 3. The program will display the results and generate CSV files and graphs in the results folder.
 
-Possible Improvements
+## Bonus: Proposed Improvements
 
 One possible improvement would be to repeat the simulation using different random seeds instead of evaluating the algorithms based on a single run.
 
